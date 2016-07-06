@@ -1,0 +1,25 @@
+{
+  "name": "labora",
+  "version": "0.0.0",
+  "description": "serevidor web estatico en node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janrodri/labora.git"
+  },
+  "keywords": [
+    "node",
+    "static",
+    "server"
+  ],
+  "author": "@janix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janrodri/labora/issues"
+  },
+  "homepage": "https://github.com/janrodri/labora#readme"
+}
