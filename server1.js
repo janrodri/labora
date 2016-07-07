@@ -24,9 +24,8 @@ var server = http.createServer(function(req, res){
 fs.readFile('./static/index.html','utf8',function(err,content){
     if(err){
         res.end("<h1> ERROR DE LECTURA</H1>");
-    }else{//podemos quitar esto y poner solo como arriba para ahorrar codigo
-        res.write(content);
-        res.end();
+    }else{
+        res.end(content);
     }
 });
     // borramos la respuesta
