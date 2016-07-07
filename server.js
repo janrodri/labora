@@ -1,5 +1,6 @@
 //modulo http 
 var http = require("http");
+//obteniendo info del entorno de ejecucion
 //crear un servidor basico con un colback donde:
 //req = request , res= responsive 
 var server = http.createServer(function name(req, res) {
@@ -10,11 +11,11 @@ var server = http.createServer(function name(req, res) {
         "Server" : "ITGAM@4.2.4"
     });
     //ENVIAMOS LA RESPUESTA
-    res.write("Hola Mundo");
+    res.write("Hola Mundo      Janice Rodriguez Olvera ");
     //serrrar la conexion
     res.end();
 });
 //Se pone a trabajar al server 
-server.listen(3000,'127.0.0.1',function () {
-    console.log("> Server listening @http://localhost:3000...");
+server.listen(3000,'192.168.1.33',function () {
+    console.log("> Server listening @http://192.168.1.33:3000...");
 });
