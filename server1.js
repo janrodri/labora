@@ -1,14 +1,12 @@
 //Nos permite acceder a las variables de entorno donde se esta ejecutando el proceso.
-
 // http
 var http = require("http");
 var fs = require('fs');
+var config = require("./config/config.js");
 // Obteniendo información del entorno
-// De ejecución con respecto al IP
-// y al puerto que debemos usar en
-// nuestro server.
-var PORT = process.env.PORT || 3000;
-var IP = process.env.IP || '127.0.0.1';
+// De ejecucióñla configuracion del modulo de configuracion
+var PORT = config.PORT;
+var IP = config.IP;
 if(IP == '127.0.0.1'){
     console.log("> -----Ejecutando de modo local-----");
 }
