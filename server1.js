@@ -4,6 +4,7 @@ var http = require("http");
 var fs = require('fs');
 var config = require("./config/config.js");
 var staticServer = require('./internals/static-server');
+var colors = require('colors');
 // Obteniendo información del entorno
 // De ejecucióñla configuracion del modulo de configuracion
 var PORT = config.PORT;
@@ -16,6 +17,12 @@ var server = http.createServer(function(req, res){
     //obtener la url del archivo 
     //de la peticion le asigno una variable url
     var url = req.url;
+    if(url == "/"){
+        // el slash nos--- sirve el eindex ---
+        //forso al sistema a que eslash sea index
+        url = "/index.html";
+    }
+    console.log(`> URL Solicitada: ${url}...`.green);
     //sirvo la url con mi server statico
     staticServer.serve(url, res);
 });
