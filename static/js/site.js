@@ -1,5 +1,5 @@
 function hola(){
-    alert("Bienvenido a esta pagina...");
+    sweetAlert("Mexico Places", "¡Bienvenido a esta pagina!");
 }
 function changeBkgColor(){
     var color = document.body.style.backgroundColor;
