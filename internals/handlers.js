@@ -1,3 +1,4 @@
+var fortune = require("./fortune");
 //manejadores de rutas virtuales,
 var fechaDeNac = new Date (1987,4,29,7,30);
 //los manejadores encapsulados en un objeto{} del metodo
@@ -20,17 +21,19 @@ module.exports = {
     //estamos llamando a otra funcion
     "/getfortune" : function (req, res) {
         //contestar con un json, y se obtiene mensaje de la fortuna
-        var fortunePaper = {
-            "mensaje" :
-            "La honestidad es un regalo muy caro, no lo esperes de gente barata"
-        };
+        //var fortunePaper = {
+         //   "mensaje" :
+         //   "La honestidad es un regalo muy caro, no lo esperes de gente barata"
+      //  };
+                // parseando a string el objetoRespuesta de respuesta
+        //var jsonResponse = JSON.stringify(fortunePaper);
+        fortune.getFortune(function (fortunePaper) {
         // se configura el contenido de respuesta HTTP
         res.writeHead(200,{
             "Content-Type" : "application/json"
         });
-        // parseando a string el objetoRespuesta de respuesta
-        var jsonResponse = JSON.stringify(fortunePaper);
         // responde el Objeto
-        res.end(jsonResponse);
+        res.end(fortunePaper);
+      });
     }
 };
