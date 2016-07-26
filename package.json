@@ -1,3 +1,4 @@
+
 {
   "name": "labora",
   "version": "0.0.0",
@@ -13,10 +14,11 @@
   },
   "keywords": [
     "node",
-    "static",
-    "server"
+    "static-server",
+    "server",
+    "web"
   ],
-  "author": "@janix",
+  "author": "@janice_ro",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/janrodri/labora/issues"

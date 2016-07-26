@@ -3,9 +3,9 @@ var fs = require('fs'),
     config = require('../config/config.js'),
     mime = require('mime');
 //exportar la funcion de servidor estatico 
-//serve hara la funcion de servir
+// serve hara la funcion de servir
 exports.serve = function name(url, res) {
-    //acompletar al static 
+    // acompletar al static 
     var filePath = config.STATIC_PATH + url;
     console.log("> " + filePath);
     //   verificando si existe o no el archivo dentro del servidor

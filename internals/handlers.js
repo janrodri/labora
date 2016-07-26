@@ -27,7 +27,7 @@ module.exports = {
         res.writeHead(200,{
             "Content-Type" : "application/json"
         });
-        Console.log("Contestando: "+ fortunePaper);
+        console.log("Contestando: "+ fortunePaper);
         // responde el Objeto
         res.end(fortunePaper);
       });

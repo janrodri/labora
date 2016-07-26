@@ -3,13 +3,14 @@
   "description": "serevidor web estatico en node",
   "main": "server.js",
   "authors": [
-    "@janix"
+    "@janice_ro"
   ],
   "license": "ISC",
   "keywords": [
     "node",
     "static",
-    "server"
+    "server", 
+    "web"
   ],
   "homepage": "https://github.com/janrodri/labora",
   "private": true,

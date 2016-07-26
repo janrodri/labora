@@ -4,10 +4,11 @@ var fortunePaper = {
 };
 //vamos a exportar un objeto
 module.exports ={
+    // metodo llamado
     "getFortune" : function (cb) {
         // convirtiendo el fortunePaper de objeto a su version en string 
         fortunePaperResponse = JSON.stringify(fortunePaper);
-        //Ejecuto el callback (cb) pasandole
+        // Ejecuto el callback (cb) pasandole
         // como parametro el fortunePaper string
         cb(fortunePaperResponse);
     }
