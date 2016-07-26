@@ -20,18 +20,14 @@ module.exports = {
     },
     //estamos llamando a otra funcion
     "/getfortune" : function (req, res) {
-        //contestar con un json, y se obtiene mensaje de la fortuna
-        //var fortunePaper = {
-         //   "mensaje" :
-         //   "La honestidad es un regalo muy caro, no lo esperes de gente barata"
-      //  };
-                // parseando a string el objetoRespuesta de respuesta
-        //var jsonResponse = JSON.stringify(fortunePaper);
+        console.log("> Se solicita fortuna...");
+        // Se obtiene la suerte
         fortune.getFortune(function (fortunePaper) {
         // se configura el contenido de respuesta HTTP
         res.writeHead(200,{
             "Content-Type" : "application/json"
         });
+        Console.log("Contestando: "+ fortunePaper);
         // responde el Objeto
         res.end(fortunePaper);
       });
