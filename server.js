@@ -25,7 +25,7 @@ var server = http.createServer(function (req, res) {
     }
     console.log(`> URL Solicitada: ${url}...`.green);
     // sirvo la url con mi server statico
-    staticServer.serve(url, res);
+    //staticServer.serve(url, res);
     // verificando que la peticion del cliente sera una ruta virtual
     if (typeof (handlers[url]) === 'function') {
         //Si entro aqui, significa que existe un manejador para la url

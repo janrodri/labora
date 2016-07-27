@@ -1,0 +1,1 @@
+mongoimport --db fortune --collection papers --type json --file suerte.json --jsonArray

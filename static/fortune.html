@@ -11,47 +11,124 @@
 
 <body>
 <!--Barra de Navegacion-->
-    <nav>
-        <div class="nav-wrapper brown lighten-3">
-            <a href="#" class="brand-logo">Fortune Cookie</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href=""><i class="material-icons left">home</i>INICIO</a></li>
-                <li><a href=""><i class="material-icons left">email</i>CONTACTO</a></li>
-                <li><a href=""><i class="material-icons left">assignment_ind</i>ABOUT</a></li>
-            </ul>
-        </div>
-    </nav>
-     <!-- Etique de cabeceras -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>   
+ <!-- Etique de cabeceras -->
     <div align="center" class="intro deep-blak lighten-2 z-depth-1">
-        <h1 class="black-text text-lighten-5" >Fortune Cookie</h1>
+        <h1 class="black-text text-lighten-5" >Galletas de la suerte</h1>
     </div>
 <!--Imagenes Responsivas-->
-    <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
+    <div class="col s12 m8 offset-m2 l6 offset-l3" align="center">
             <div class="row valign-wrapper">
                 <div class="col s2">
                     <img src="./img/jinjan.jpg" alt="" class="circle responsive-img">
-                    <!-- notice the "circle" class -->
                 </div>
+                    <!--Contenido -->
                 <div class="col s10">
-                    <span class="black-text"><center><MARQUE>
-                Si tu fortuna quieres saber, la galleta de la suerte deber romper
-              </center></MARQUE></span>
+                    <span class="black-text">
+                Rompe la Galleta de la suerte para saber tu fortuna...
+              </span>
+            <div class="col s2">
+                <img src="./img/jinjan.jpg" alt="" class="circle responsive-img">
+            </div>
                 </div>
             </div>
-        </div>
     </div>
-    <!--Contenido
-    <div align="center" id="cookie"><button onclick="getFortuneFromServer()">ROMPER LA GALLETA</button></div>
--->
-    <div align="center">
-        <button class="btn waves-effect brown lighten-3" type="submit" name="action" onclick="getFortuneFromServer()">Romper la galleta
-    <i class="material-icons right">send</i>
-  </button>
+    <!--boton -->
+    <div align="center" >
+    <button class="waves-effect waves-light btn-large" type="submit" name="action"><a onclick="getFortuneFromServer()">
+        <i class="material-icons right">thumbs_up_down</i>Rompe tu GALLETA !!!</a></button>
     </div>
    
     <div id="status">
     </div>
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+  <!--Contenido del avatar-->
+   <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="images/yuna.jpg" alt="" class="circle">
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </ul>
+  <!--fin avatar-->
+  <!--Footer-->
+  <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Instituto Tecnológico de /n Gustavo A. Madero</h5>
+                <p class="grey-text text-lighten-4">Janice Rdriguez Olvera</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="http://www.itgustavoamadero.edu.mx/">ITGAM</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Programacion Web Moderna
+            </div>
+          </div>
+        </footer>
+Footer Adhesivo
+Alumna: Janice Rodriguez Olvera
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  main {
+    flex: 1 0 auto;
+  }  
+<!-- fin foot-->
     <!--Seccion de Scripts-->
     <script src="./vendor/jquery/dist/jquery.js"></script>
     <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
